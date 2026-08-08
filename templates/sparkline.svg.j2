@@ -1,0 +1,60 @@
+{# sparkline.svg.j2 — 26-week contribution sparkline #}
+<svg width="700" height="130" viewBox="0 0 700 130" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Dark mode (default — matches GitHub dark) */
+    .sl-bg       { fill: #0d1117; }
+    .sl-line     { stroke: #e3b341; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .sl-area     { fill: url(#areaGrad); }
+    .sl-grid     { stroke: #30363d; stroke-width: 0.5; opacity: 0.3; }
+    .sl-label    { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 10px; fill: #8b949e; }
+    .sl-value    { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 11px; fill: #c9d1d9; font-weight: 600; }
+    .sl-dot      { fill: #e3b341; }
+    .sl-border   { stroke: #30363d; stroke-width: 1; fill: none; }
+
+    @media (prefers-color-scheme: light) {
+      .sl-bg       { fill: #ffffff; }
+      .sl-line     { stroke: #9a6700; }
+      .sl-grid     { stroke: #d0d7de; }
+      .sl-label    { fill: #57606a; }
+      .sl-value    { fill: #1f2328; }
+      .sl-dot      { fill: #9a6700; }
+      .sl-border   { stroke: #d0d7de; }
+    }
+  </style>
+
+  <defs>
+    <linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e3b341" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#e3b341" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="130" rx="0" class="sl-bg"/>
+  <rect x="0.5" y="0.5" width="699" height="129" rx="0" class="sl-border"/>
+
+  <!-- Grid lines -->
+  {% for i in range(3) %}
+  <line x1="50" y1="{{ 25 + i * 30 }}" x2="660" y2="{{ 25 + i * 30 }}" class="sl-grid"/>
+  {% endfor %}
+
+  <!-- Sparkline area fill -->
+  {% if points|length > 1 %}
+  <path d="M {{ points[0].x }} {{ points[0].y }}{% for p in points[1:] %} L {{ p.x }} {{ p.y }}{% endfor %} L {{ points[-1].x }} 95 L {{ points[0].x }} 95 Z" class="sl-area"/>
+
+  <!-- Sparkline stroke -->
+  <path d="M {{ points[0].x }} {{ points[0].y }}{% for p in points[1:] %} L {{ p.x }} {{ p.y }}{% endfor %}" class="sl-line"/>
+
+  <!-- End dot -->
+  <circle cx="{{ points[-1].x }}" cy="{{ points[-1].y }}" r="3" class="sl-dot"/>
+
+  <!-- Current value label -->
+  <text x="{{ points[-1].x + 8 }}" y="{{ points[-1].y + 4 }}" class="sl-value">{{ last_value }}</text>
+  {% endif %}
+
+  <!-- Axis label -->
+  <text x="50" y="118" class="sl-label">last 26 weeks</text>
+
+  <!-- Y-axis max label -->
+  <text x="50" y="22" class="sl-label">{{ max_value }}</text>
+</svg>

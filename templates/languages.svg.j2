@@ -1,0 +1,45 @@
+{# languages.svg.j2 — horizontal stacked language bar #}
+<svg width="700" height="60" viewBox="0 0 700 60" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .lg-bg      { fill: #0d1117; }
+    .lg-border  { stroke: #30363d; stroke-width: 1; fill: none; }
+    .lg-label   { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 10px; fill: #c9d1d9; }
+    .lg-pct     { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 9px; fill: #8b949e; }
+    .lg-track   { fill: #21262d; rx: 2; }
+
+    @media (prefers-color-scheme: light) {
+      .lg-bg      { fill: #ffffff; }
+      .lg-border  { stroke: #d0d7de; }
+      .lg-label   { fill: #1f2328; }
+      .lg-pct     { fill: #57606a; }
+      .lg-track   { fill: #eaeef2; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="700" height="60" rx="0" class="lg-bg"/>
+  <rect x="0.5" y="0.5" width="699" height="59" rx="0" class="lg-border"/>
+
+  <!-- Bar track -->
+  <rect x="24" y="12" width="652" height="8" rx="4" class="lg-track"/>
+
+  <!-- Stacked segments -->
+  {% set ns = namespace(offset=24) %}
+  {% for lang in languages %}
+  {% set seg_width = (lang.percentage / 100) * 652 %}
+  <rect x="{{ ns.offset }}" y="12" width="{{ seg_width }}" height="8" rx="{% if loop.first %}4{% else %}0{% endif %}" fill="{{ lang.color }}"/>
+  {% set ns.offset = ns.offset + seg_width %}
+  {% endfor %}
+
+  <!-- Inline labels below the bar -->
+  {% set ns2 = namespace(lx=24) %}
+  {% for lang in languages %}
+  {% set seg_width = (lang.percentage / 100) * 652 %}
+  {% set label_x = ns2.lx + seg_width / 2 %}
+  {% if seg_width > 45 %}
+  <text x="{{ label_x }}" y="36" text-anchor="middle" class="lg-label">{{ lang.name }}</text>
+  <text x="{{ label_x }}" y="48" text-anchor="middle" class="lg-pct">{{ lang.percentage }}%</text>
+  {% endif %}
+  {% set ns2.lx = ns2.lx + seg_width %}
+  {% endfor %}
+</svg>

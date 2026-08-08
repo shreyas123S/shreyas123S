@@ -1,0 +1,110 @@
+{
+  "user": {
+    "login": "shreyas123S",
+    "name": "Shreyas S",
+    "followers": 0,
+    "public_repos": 10
+  },
+  "repos": [
+    {
+      "name": "shreyas123S",
+      "description": null,
+      "language": "JavaScript",
+      "stargazers_count": 0,
+      "pushed_at": "2026-08-08T19:34:27Z",
+      "created_at": "2026-08-08T19:11:57Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/shreyas123S/languages"
+    },
+    {
+      "name": "aiml",
+      "description": null,
+      "language": "Jupyter Notebook",
+      "stargazers_count": 0,
+      "pushed_at": "2026-08-05T19:21:25Z",
+      "created_at": "2026-08-01T14:48:21Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/aiml/languages"
+    },
+    {
+      "name": "Personalized_News_Aggregator",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "pushed_at": "2026-02-25T08:50:54Z",
+      "created_at": "2026-02-25T08:37:10Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/Personalized_News_Aggregator/languages"
+    },
+    {
+      "name": "Vision_2047",
+      "description": null,
+      "language": "TypeScript",
+      "stargazers_count": 0,
+      "pushed_at": "2025-12-09T06:01:38Z",
+      "created_at": "2025-12-08T05:00:10Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/Vision_2047/languages"
+    },
+    {
+      "name": "student",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2025-11-21T09:41:24Z",
+      "created_at": "2025-11-21T09:41:24Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/student/languages"
+    },
+    {
+      "name": "test",
+      "description": null,
+      "language": null,
+      "stargazers_count": 0,
+      "pushed_at": "2025-11-21T09:22:25Z",
+      "created_at": "2025-11-21T09:22:25Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/test/languages"
+    },
+    {
+      "name": "inshorts-api-host",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "pushed_at": "2025-10-22T17:53:58Z",
+      "created_at": "2025-10-22T17:50:27Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/inshorts-api-host/languages"
+    },
+    {
+      "name": "Employee-Scale-Matrix",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "pushed_at": "2025-09-28T07:00:44Z",
+      "created_at": "2025-09-28T06:59:23Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/Employee-Scale-Matrix/languages"
+    },
+    {
+      "name": "Bank-loan-management-system",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "pushed_at": "2024-09-27T06:10:58Z",
+      "created_at": "2024-09-26T08:42:14Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/Bank-loan-management-system/languages"
+    },
+    {
+      "name": "BITM-internhip-program",
+      "description": null,
+      "language": "Python",
+      "stargazers_count": 0,
+      "pushed_at": "2024-09-27T05:09:04Z",
+      "created_at": "2024-09-26T10:48:53Z",
+      "languages_url": "https://api.github.com/repos/shreyas123S/BITM-internhip-program/languages"
+    }
+  ],
+  "language_bytes": {
+    "JavaScript": 18066,
+    "Jupyter Notebook": 227977,
+    "Python": 43572,
+    "HTML": 11890,
+    "Batchfile": 752,
+    "Procfile": 70,
+    "TypeScript": 146516,
+    "CSS": 59
+  }
+}
