@@ -29,28 +29,28 @@
     <g transform="translate(0, 10)">
       
       <text x="24" y="45" class="text-main">Python    </text>
-      <text x="100" y="45" fill="#3572A5" font-family="Consolas, 'Courier New', monospace" font-size="13">█████░░░░░░░░░░</text>
-      <text x="235" y="45" class="text-sub"> 33.3%</text>
+      <text x="100" y="45" fill="#3572A5" font-family="Consolas, 'Courier New', monospace" font-size="13">████████░░░░░░░</text>
+      <text x="235" y="45" class="text-sub"> 50.0%</text>
     
 
-      <text x="24" y="73" class="text-main">Java      </text>
-      <text x="100" y="73" fill="#b07219" font-family="Consolas, 'Courier New', monospace" font-size="13">██░░░░░░░░░░░░░</text>
-      <text x="235" y="73" class="text-sub"> 16.7%</text>
+      <text x="24" y="73" class="text-main">TypeScript</text>
+      <text x="100" y="73" fill="#3178c6" font-family="Consolas, 'Courier New', monospace" font-size="13">███░░░░░░░░░░░░</text>
+      <text x="235" y="73" class="text-sub"> 20.0%</text>
     
 
       <text x="24" y="101" class="text-main">JavaScript</text>
       <text x="100" y="101" fill="#f1e05a" font-family="Consolas, 'Courier New', monospace" font-size="13">██░░░░░░░░░░░░░</text>
-      <text x="235" y="101" class="text-sub"> 16.7%</text>
+      <text x="235" y="101" class="text-sub"> 10.0%</text>
     
 
-      <text x="24" y="129" class="text-main">C++       </text>
-      <text x="100" y="129" fill="#f34b7d" font-family="Consolas, 'Courier New', monospace" font-size="13">██░░░░░░░░░░░░░</text>
-      <text x="235" y="129" class="text-sub"> 16.7%</text>
+      <text x="24" y="129" class="text-main">Jupyter No</text>
+      <text x="100" y="129" fill="#DA5B0B" font-family="Consolas, 'Courier New', monospace" font-size="13">██░░░░░░░░░░░░░</text>
+      <text x="235" y="129" class="text-sub"> 10.0%</text>
     
 
       <text x="24" y="157" class="text-main">HTML      </text>
       <text x="100" y="157" fill="#e34c26" font-family="Consolas, 'Courier New', monospace" font-size="13">██░░░░░░░░░░░░░</text>
-      <text x="235" y="157" class="text-sub"> 16.7%</text>
+      <text x="235" y="157" class="text-sub"> 10.0%</text>
     
     </g>
   

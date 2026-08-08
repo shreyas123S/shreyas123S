@@ -28,19 +28,19 @@
     <text x="24" y="30" class="text-sans">DEVELOPER METRICS</text>
     
     <text x="24" y="65" class="text-main">><tspan x="40" class="text-sub">REPOSITORIES</tspan></text>
-    <text x="200" y="65" class="accent-cyan text-bold">45</text>
+    <text x="200" y="65" class="accent-cyan text-bold">12</text>
     
     <text x="24" y="90" class="text-main">><tspan x="40" class="text-sub">PULL REQUESTS</tspan></text>
-    <text x="200" y="90" class="accent-green text-bold">45</text>
+    <text x="200" y="90" class="accent-green text-bold">0</text>
     
     <text x="24" y="115" class="text-main">><tspan x="40" class="text-sub">ISSUES</tspan></text>
-    <text x="200" y="115" class="accent-pink text-bold">12</text>
+    <text x="200" y="115" class="accent-pink text-bold">0</text>
     
     <text x="24" y="140" class="text-main">><tspan x="40" class="text-sub">STARS EARNED</tspan></text>
-    <text x="200" y="140" class="accent-amber text-bold">82</text>
+    <text x="200" y="140" class="accent-amber text-bold">0</text>
     
     <text x="24" y="165" class="text-main">><tspan x="40" class="text-sub">FOLLOWERS</tspan></text>
-    <text x="200" y="165" class="text-main text-bold">142</text>
+    <text x="200" y="165" class="text-main text-bold">0</text>
   
   </g>
 </svg>
